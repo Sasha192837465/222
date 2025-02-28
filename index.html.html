@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Укрась прозальное утро слезаит обещания</title>
+    <style>
+        body {
+            height: 100vh;
+            text-align: center;
+            background: linear-gradient(135deg, #504357, #180122);
+            color: #000000;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1u4Hv4-PDCgDFWd8PtwItEiFMqoNHMHPd4g&s'); /* Укажите путь к изображению */
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+        
+        .header {
+            padding: 80px;
+            animation: fadeIn 4s ease-in-out;
+        }
+
+        .animated-title {
+            font-size: 3em;
+            animation: slideIn 1.2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateY(-50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        input[type="email"] {
+            padding: 10px;
+            width: 250px;
+            border: 2px solid #fff;
+            border-radius: 5px;
+            background: rgba(255, 255, 255, 0.8);
+            font-size: 1em;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        input[type="email"]:focus {
+            outline: none;
+            border-color: #750031;
+        }
+
+        button {
+            padding: 10px 20px;
+            background: #6b5555;
+            border: none;
+            color: white;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #291313;
+        }
+
+        .content {
+            margin-top: 50px;
+            padding: 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes moveImage {
+    from {
+        transform: translateX(200vw); 
+    }
+    to {
+        transform: translateX(0);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    overflow: hidden;
+}
+
+img {
+    animation: moveImage 2s ease-out forwards; 
+    margin-top: 10px;
+}
+.text {
+    position: relative;
+    left: -100%; 
+    opacity: 0;
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 40px; 
+    animation: slideText 2s ease-out forwards;
+    animation-delay: 1s; 
+
+@keyframes slideText {
+    0% {
+        left: -100%;
+        opacity: 0;
+    }
+    80% {
+        left: 10px; 
+        opacity: 1;
+    }
+    100% {
+        left: 0;
+        opacity: 1;
+    }
+}
+
+       
+             
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <h1 class="animated-title">Добро пожаловать!</h1>
+        <h4 class="animated-title">Тут вы сможете следить за тайтлом и узнать информацию. А так же общаться с другими пользователями</h4>
+        <p>Зарегистрируйтесь чтоб узнавать все о любимом тайтле</p>
+        <form action="#" method="POST">
+            <input type="email" name="email" placeholder="Введите ваш email" required>
+            <button type="submit">Подписаться</button> 
+        </form>
+    </header>
+    <div style="display: flex; align-items: flex-start;">
+        <img src="c:\Users\KILC-18\Desktop\Sasha.Работа\обложка.jpg" style="width: 400px; margin-right: 10px;">
+        <img src="c:\Users\KILC-18\Desktop\Sasha.Работа\222.jpg" style="width: 400px;">
+        <img src="c:\Users\KILC-18\Desktop\Sasha.Работа\333.jpg" style="width: 400px;">
+    </div>
+    <span class="text">Красавица Макия — из рода бессмертных. На протяжении веков многие армии пытались захватить её народ, чтобы завладеть секретом вечной жизни. И вот теперь, когда город разрушен, девушка прячется в лесу. Здесь она находит потерявшего родителей маленького мальчика Эриала и начинает о нём заботиться.</span>
+    <section class="content">
+        <button type="submit">Смотреть</button> 
+        <h2>Надеюсь вам все понравилось</h2>
+        <p>Были рады вас видеть!</p>
+    </section>
+</body>
+</html>
